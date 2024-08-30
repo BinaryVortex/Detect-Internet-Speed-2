@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internet Speed Test</h1>
+        <button id="start-btn">Start Test</button>
+        <div id="loading" class="hidden" aria-live="polite">
+            <div class="spinner"></div>
+            <p id="loading-text">Testing...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <div id="results" class="hidden" aria-live="polite">
+            <p>Download Speed: <span id="download"></span> Mbps</p>
+            <p>Upload Speed: <span id="upload"></span> Mbps</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
